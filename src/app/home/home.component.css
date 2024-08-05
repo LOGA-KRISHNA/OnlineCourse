@@ -1,0 +1,14 @@
+.hero-section {
+    /* background: url('images.jpg') no-repeat center center; */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero-section .btn-primary {
+    margin-top: 20px;
+}
+

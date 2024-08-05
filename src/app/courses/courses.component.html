@@ -1,0 +1,25 @@
+
+<div class="container my-5 ">
+    <div class="row">
+        <!-- Example course card -->
+        <div class="col-md-4 course-card" *ngFor="let i of AllCourses">
+            <div class="card" >
+                <img src="course-image.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.title}}</h5>
+                    <p class="card-text">{{i.desc}}</p>
+                    <p class="course-price">{{i.price | currency:'INR' }}</p>
+                    <p class="course-duration">Duration: {{i.duration}}</p>
+                    <p class="course-author">Author: {{i.author}}</p>
+                    <p>Rating : {{i.rating}}</p>
+                    <div class="d-flex mt-3">
+                        <a  [routerLink]="'./course/'+i.id" class="btn btn-primary me-2">Enroll Now</a>
+                        <a [routerLink]="'./course/'+i.id" class="btn btn-primary">Detials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat above block for each course -->
+    </div>
+</div>
+

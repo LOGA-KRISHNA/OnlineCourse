@@ -1,0 +1,15 @@
+.course-card {
+    margin-bottom: 30px;
+}
+.course-rating {
+    color: #f39c12; /* Gold color for stars */
+}
+.course-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2c3e50; /* Dark color for price */
+}
+.course-duration, .course-author {
+    font-size: 0.9rem;
+    color: #7f8c8d; /* Grey color for text */
+}
